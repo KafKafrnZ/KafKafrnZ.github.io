@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shankara internal suite — Kunwar Satyam Singh</title>
+<meta name="description" content="What I built for Shankara Buildpro in one quarter: catalog search, fleet costs, and stock against minimum levels. No customer data." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2305060f'/%3E%3Ctext x='50' y='67' font-size='54' font-family='monospace' font-weight='700' fill='%2319e3ff' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#05060f; --ink:#e8ecff; --muted:#93a0cf; --cyan:#19e3ff; --line:rgba(140,170,255,.18); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 Inter, sans-serif; }
+  main { max-width: 740px; margin: 0 auto; padding: 48px 22px 80px; }
+  a { color: var(--cyan); }
+  h1, h2 { font-family: "Space Grotesk", sans-serif; line-height: 1.25; }
+  h1 { font-size: 2rem; margin: 12px 0 8px; }
+  h2 { font-size: 1.25rem; margin: 32px 0 8px; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); }
+  ul { padding-left: 1.2rem; }
+  li { margin: 6px 0; }
+  code { font-size: 0.92em; }
+</style>
+</head>
+<body>
+<main>
+  <p class="muted"><a href="index.html">← Kunwar Satyam Singh</a></p>
+  <h1>Internal operations suite, Shankara Buildpro</h1>
+  <p class="muted">Bengaluru · August–October 2026 · sole developer. The company title on the offer letter is systems administrator. Repositories are private. This page has no customer data, no internal hostnames, and no screenshots of live sheets.</p>
+
+  <h2>The job the spreadsheets were doing</h2>
+  <p>Shankara Buildpro sells building materials. Two office jobs were still workbooks.</p>
+  <ul>
+    <li>The item catalog. Stewards export the item master from Tally. Everyone else needs to search and filter it. Tally stays the accounting system. This app does not post vouchers.</li>
+    <li>The fleet sheet. Vehicle-wise income and expenses for the month: vehicles, drivers, trips, fuel, repairs, and bills.</li>
+    <li>Inventory, started in October. Stock on hand against the minimum a branch is supposed to hold. The join key is the alias code. The supplier product number is not unique, so it is not the key.</li>
+  </ul>
+
+  <h2>What I shipped</h2>
+  <ul>
+    <li>A NestJS API and a React UI on PostgreSQL, with TypeORM migrations and Docker Compose for the database.</li>
+    <li>Sign-in and roles. Catalog upload, search, filter, and edits that stay on the sheet they came from. Full exports are streamed, because the item master is large.</li>
+    <li>FleetHub. Masters, trip and expense entry, Excel export, and reports you can print. People at the office tried it in October.</li>
+    <li>A branch that puts the fleet screens and the inventory screens inside the catalog app: one sign-in, one database. That branch is ahead of the default branch. Cutover is the current work.</li>
+  </ul>
+  <p>Stack: TypeScript, NestJS, React, PostgreSQL, Docker. I wrote the schema, the API, the UI, the office deploy, and the changes that came back after people used it.</p>
+
+  <h2>What this is not</h2>
+  <ul>
+    <li>Not a public product. Another company would get a new build. This data stays at Shankara.</li>
+    <li>Not an accounting system.</li>
+    <li>Not finished as one app. Fleet still has its own repository. The merged suite is on a branch.</li>
+    <li>The public <a href="https://github.com/KafKafrnZ/shankara-analytics">shankara-analytics</a> repo is a one-commit visual dashboard. Staff do not use it. It is not part of this suite.</li>
+  </ul>
+</main>
+</body>
+</html>
