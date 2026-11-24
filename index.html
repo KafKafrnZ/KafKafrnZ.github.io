@@ -4,10 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#05060f" />
-<title>Kunwar Satyam Singh — Full-stack engineer</title>
-<meta name="description" content="Full-stack engineer in Bengaluru. NestJS and PostgreSQL internal apps, plus merged fixes in Unsloth and llama.cpp." />
-<meta property="og:title" content="Kunwar Satyam Singh — Full-stack engineer" />
-<meta property="og:description" content="Internal operations suite for a building-materials company, and merged pull requests in Unsloth and llama.cpp." />
+<title>Kunwar Satyam Singh — AI Engineer</title>
+<meta name="description" content="AI engineer in Bengaluru. Eight merged pull requests in ONNX Runtime, llama.cpp and Unsloth, LLM applications with retrieval, and a full-stack internal suite." />
+<meta property="og:title" content="Kunwar Satyam Singh — AI Engineer" />
+<meta property="og:description" content="Merged pull requests in ONNX Runtime, llama.cpp and Unsloth, and LLM applications, with the unfinished work labelled as unfinished." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2305060f'/%3E%3Ctext x='50' y='67' font-size='54' font-family='monospace' font-weight='700' fill='%2319e3ff' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E">
@@ -241,9 +241,6 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
 .attr{margin-bottom:18px}
 .attr .row{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:.78rem;margin-bottom:8px}
 .attr .row .nm{color:var(--ink)}.attr .row .lv{color:var(--cyan)}
-.meter{height:6px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
-.meter i{display:block;height:100%;width:0;border-radius:4px;transition:width 1.1s cubic-bezier(.2,.8,.2,1);
-  background:linear-gradient(90deg,var(--cyan),var(--violet))}
 
 /* ═══ WORK ═══ */
 .work-grid{display:grid;grid-template-columns:1fr;gap:20px}
@@ -253,6 +250,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
   padding:4px 10px;border-radius:5px;border:1px solid;}
 .wtag.production{color:var(--cyan);border-color:rgba(25,227,255,.4);background:rgba(25,227,255,.06)}
 .wtag.client{color:var(--gold);border-color:rgba(255,210,63,.4);background:rgba(255,210,63,.06)}
+.wtag.wip{color:var(--gold);border-color:rgba(255,210,63,.4);background:rgba(255,210,63,.06)}
 .wtag.own{color:var(--violet);border-color:rgba(157,107,255,.4);background:rgba(157,107,255,.06)}
 .wtitle{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;color:#fff;font-weight:700}
 .wdesc{font-size:.98rem;color:var(--muted);max-width:760px}
@@ -306,6 +304,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
 .wr-list .badge{font-family:'JetBrains Mono',monospace;font-size:.66rem;color:var(--dim);
   border:1px solid var(--border);border-radius:5px;padding:3px 8px;flex-shrink:0}
 .wr-list b{color:var(--ink);font-weight:600}
+.work-card .wr-list{max-width:860px}
+.work-card .wr-list .badge{min-width:86px;text-align:center;color:var(--muted)}
+.wsub{font-family:'JetBrains Mono',monospace;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);margin-top:8px}
 
 /* ═══ CONTACT ═══ */
 #contact{text-align:center;padding-bottom:150px}
@@ -457,11 +458,12 @@ footer span{color:var(--cyan)}
     <div>
       <div class="eyebrow">Bengaluru, India · Open for freelance &amp; full-time</div>
       <h1>KUNWAR SATYAM <span class="accent">SINGH</span></h1>
-      <p class="role">FULL-STACK ENGINEER — <b>NESTJS · REACT · LLM APPLICATIONS</b></p>
+      <p class="role">AI ENGINEER — <b>LLM APPLICATIONS · RAG · INFERENCE</b></p>
       <p class="pitch">
-        For the last quarter I was the only developer on an internal suite for a
-        building-materials company: catalog search, fleet costs, and stock against
-        minimum levels. I also land small fixes in Unsloth, llama.cpp, Ollama, and ONNX Runtime.
+        I fix bugs in the engines that run language models, and I build the applications
+        on top. <b>Eight pull requests merged</b> in ONNX Runtime, llama.cpp and Unsloth,
+        with the GPU bugs reproduced on my own cards. What is unfinished is labelled
+        <b>work in progress</b> on this page.
       </p>
       <div class="cta">
         <a class="btn primary" href="https://github.com/KafKafrnZ" target="_blank" rel="noopener">GitHub</a>
@@ -469,9 +471,9 @@ footer span{color:var(--cyan)}
         <a class="btn" href="Kunwar_Satyam_Singh_Resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
       </div>
       <div class="hero-stats">
-        <div class="hstat card"><div class="v" data-count="5">0</div><div class="k">pull requests merged in Unsloth and llama.cpp, October 2026</div></div>
-        <div class="hstat card"><div class="v">1 quarter</div><div class="k">catalog, fleet, and inventory, office trial in October</div></div>
-        <div class="hstat card"><div class="v">Private</div><div class="k">suite repos. Public write-up has no customer data</div></div>
+        <div class="hstat card"><div class="v" data-count="8">0</div><div class="k">pull requests merged: ONNX Runtime 3, Unsloth 4, llama.cpp 1</div></div>
+        <div class="hstat card"><div class="v" data-count="8">0</div><div class="k">more open, not merged: Ollama, mistral.rs, ONNX Runtime, Unsloth</div></div>
+        <div class="hstat card"><div class="v">2 GPUs</div><div class="k">RTX 5070 Ti laptop and GTX 1650, where I reproduce the GPU bugs</div></div>
       </div>
     </div>
 
@@ -483,13 +485,13 @@ footer span{color:var(--cyan)}
       <pre><span class="cm"># studio_dante :: about.py</span>
 <span class="kw">class</span> <span class="fn">Engineer</span>(BaseModel):
     name:  str = <span class="st">"Kunwar Satyam Singh"</span>
-    role:  str = <span class="st">"Full-stack engineer"</span>
+    role:  str = <span class="st">"AI engineer"</span>
     focus: list[str] = [
-        <span class="st">"NestJS, React, PostgreSQL"</span>,
-        <span class="st">"internal business apps"</span>,
-        <span class="st">"inference-stack bugfixes"</span>,
+        <span class="st">"LLM inference: CUDA, cuDNN, KV cache"</span>,
+        <span class="st">"RAG and LLM applications"</span>,
+        <span class="st">"Python, Go, TypeScript backends"</span>,
     ]
-    currently: str = <span class="st">"Shankara suite cutover"</span>
+    currently: str = <span class="st">"AI tutor: real data, then evaluation"</span>
     status: str = <span class="st">"available"</span>  <span class="cm"># freelance + full-time</span> <span class="cursor"></span></pre>
     </div>
   </div>
@@ -499,19 +501,21 @@ footer span{color:var(--cyan)}
 <section id="about">
   <div class="wrap">
     <div class="eyebrow">About</div>
-    <h2 class="sec-title">The title and the work are different</h2>
-    <p class="sec-sub">Shankara Buildpro hired me as a systems administrator in December 2025. From August 2026 I have also been the only developer on their internal web suite. I still own the office network and servers.</p>
+    <h2 class="sec-title">From the model runtime to the app around it</h2>
+    <p class="sec-sub">AI/ML engineer from January 2024 to August 2025. Since December 2025 my employment title is systems administrator at Shankara Buildpro, where I was also the only developer of their internal suite. The AI work below is open source and personal.</p>
     <div class="about-grid card reveal">
       <div class="who">
         <h3>Kunwar Satyam Singh</h3>
-        <p>B.E. Computer Engineering, 2023, then a year and a half as an AI/ML engineer building forecasting prototypes and a course Q&amp;A bot. The work I want judged is the 2026 suite, plus the pull requests maintainers actually merged.</p>
-        <p>Python and TypeScript. NestJS, React, PostgreSQL, FastAPI. Enough CUDA and Windows debugging to get a llama.cpp one-liner and three Unsloth Studio fixes through review.</p>
+        <p><b>How I work on a bug:</b> reproduce it, find the cause, change as little as possible, then run a control that shows the test can fail. On ONNX Runtime #33945 the stress test failed 0 of 2,000 runs with the planner's wait in place and 1,950 of 2,000 with it removed. Without that control, a pass would have meant little.</p>
+        <p>B.E. Computer Engineering, 2023. Python, Go, TypeScript and SQL; C++ and Rust in upstream fixes.</p>
       </div>
       <div class="attrs">
-        <div class="attr"><div class="row"><span class="nm">NestJS / React / PostgreSQL</span><span class="lv">The suite</span></div><div class="meter"><i data-w="86"></i></div></div>
-        <div class="attr"><div class="row"><span class="nm">Python / FastAPI / RAG</span><span class="lv">Proficient</span></div><div class="meter"><i data-w="74"></i></div></div>
-        <div class="attr"><div class="row"><span class="nm">Inference tooling</span><span class="lv">Merged fixes</span></div><div class="meter"><i data-w="70"></i></div></div>
-        <div class="attr"><div class="row"><span class="nm">Office networks and servers</span><span class="lv">Day job</span></div><div class="meter"><i data-w="68"></i></div></div>
+        <h3>Where the evidence is</h3>
+        <div class="attr"><div class="row"><span class="nm">LLM inference, CUDA, cuDNN</span><span class="lv">Merged upstream</span></div></div>
+        <div class="attr"><div class="row"><span class="nm">QLoRA fine-tuning on 4 GB</span><span class="lv">Merged guide</span></div></div>
+        <div class="attr"><div class="row"><span class="nm">RAG and LLM applications</span><span class="lv">Public code, in progress</span></div></div>
+        <div class="attr"><div class="row"><span class="nm">LLM evaluation</span><span class="lv">Planned, no results yet</span></div></div>
+        <div class="attr"><div class="row"><span class="nm">NestJS / React / PostgreSQL</span><span class="lv">Internal suite</span></div></div>
       </div>
     </div>
   </div>
@@ -521,44 +525,105 @@ footer span{color:var(--cyan)}
 <section id="work">
   <div class="wrap">
     <div class="eyebrow">Selected Work</div>
-    <h2 class="sec-title">Shipped, not slideware</h2>
-    <p class="sec-sub">The suite is private. The pull requests are public. Older forecasting repos are prototypes and are not listed here.</p>
+    <h2 class="sec-title">AI work first, with its status</h2>
+    <p class="sec-sub">Merged means merged upstream. Open means not merged. Work in progress means exactly that. Forecasting prototypes are not listed.</p>
     <div class="work-grid">
 
       <div class="work-card card reveal" data-tilt>
         <div class="wtop">
+          <span class="wtag production">8 merged</span>
+          <span class="wtag wip">8 open</span>
+          <span class="wtitle">Open-source LLM inference and fine-tuning</span>
+        </div>
+        <p class="wdesc">
+          Some bugs I hit myself, others came from open issues. The GPU ones were reproduced on my own cards before the fix.
+          Microsoft's onnxruntime repository has been unavailable since about 17 November 2026,
+          so those links go to the same commits on my fork.
+        </p>
+        <div class="wsub">Merged: inference</div>
+        <ul class="wr-list">
+          <li><span class="badge">ORT</span> <span><b><a href="https://github.com/KafKafrnZ/onnxruntime/commit/1f84d5308115bcb96085f1202e21c9a108d37fbe" target="_blank" rel="noopener">#33945 attention read a GPU-computed length as 0.</a></b> The value sat in host-readable memory tagged as a GPU device, and a helper trusted only the CPU tag. With a static KV cache the output was wrong with no error. Four new tests fail without the fix.</span></li>
+          <li><span class="badge">ORT</span> <span><b><a href="https://github.com/KafKafrnZ/onnxruntime/commit/b43d6f4d688f99061389f3e96d4b60e2147830ee" target="_blank" rel="noopener">#33744 training-enabled CUDA builds load again.</a></b> Eight missing cuDNN stubs made every session fall back to CPU silently on Linux. On Windows the same gap broke the link.</span></li>
+          <li><span class="badge">ORT</span> <span><b><a href="https://github.com/KafKafrnZ/onnxruntime/commit/c889c105feff26310c15fb17c605f8c0600608ea" target="_blank" rel="noopener">#34081 graph-cache key zeroed before hashing.</a></b> Nine padding bytes were hashed as they were, so equal keys could miss the cache and build a graph twice. Reproduced on release 1.31.0; latent on main. The duplicate build was first reported by john-rocky.</span></li>
+          <li><span class="badge">llama.cpp</span> <span><b><a href="https://github.com/ggml-org/llama.cpp/pull/30229" target="_blank" rel="noopener">#30229 CPU and GPU agree on rounding under MSVC.</a></b> One line. Nine of 18 f16/bf16 tests failed before it on the RTX 5070 Ti.</span></li>
+        </ul>
+        <div class="wsub">Merged: fine-tuning and tooling</div>
+        <ul class="wr-list">
+          <li><span class="badge">Unsloth</span> <span><b><a href="https://github.com/unslothai/unsloth/pull/7605" target="_blank" rel="noopener">#7605 4 GB VRAM QLoRA guide and script.</a></b> Run end to end on a GTX 1650. Writing it turned up two trainer-argument problems that the script now handles.</span></li>
+          <li><span class="badge">Unsloth</span> <span><b><a href="https://github.com/unslothai/unsloth/pull/12839" target="_blank" rel="noopener">#12839 LAN access binds only the addresses you choose.</a></b> A security default. The maintainer extended it before merging.</span></li>
+          <li><span class="badge">Unsloth</span> <span><b><a href="https://github.com/unslothai/unsloth/pull/13117" target="_blank" rel="noopener">#13117 clear error when a pre-cast text encoder fails,</a></b> in place of a confusing cascade.</span></li>
+          <li><span class="badge">Unsloth</span> <span><b><a href="https://github.com/unslothai/unsloth/pull/13023" target="_blank" rel="noopener">#13023 spell-check setting.</a></b> </span></li>
+        </ul>
+        <div class="wsub">Open, not merged</div>
+        <ul class="wr-list">
+          <li><span class="badge">mistral.rs</span> <span><b><a href="https://github.com/EricLBuehler/mistral.rs/pull/2539" target="_blank" rel="noopener">#2539 FP8 quantization with CUDA graphs and concurrent requests.</a></b> A cuBLASLt query during graph capture invalidated the capture; batch folding broke two requests at once. Not reviewed yet.</span></li>
+          <li><span class="badge">Ollama</span> <span><b><a href="https://github.com/ollama/ollama/pull/19393" target="_blank" rel="noopener">#19393 VRAM prediction counted CPU-resident tensors,</a></b> which evicted models that would have fit. Prediction 6.8 to 5.4 GiB in my test.</span></li>
+          <li><span class="badge">Ollama</span> <span><b><a href="https://github.com/ollama/ollama/pull/18978" target="_blank" rel="noopener">#18978 retry startup with eager CUDA module loading.</a></b> Low commit charge, not low RAM, caused the crash: 5 of 9 loads crashed on stock, 0 of 9 patched.</span></li>
+          <li><span class="badge">Ollama</span> <span><b><a href="https://github.com/ollama/ollama/pull/19339" target="_blank" rel="noopener">#19339 interrupted downloads resume after a restart.</a></b> </span></li>
+          <li><span class="badge">Others</span> <span>Ollama <a href="https://github.com/ollama/ollama/pull/19496" target="_blank" rel="noopener">#19496</a> and <a href="https://github.com/ollama/ollama/pull/18951" target="_blank" rel="noopener">#18951</a>; ONNX Runtime <a href="https://github.com/KafKafrnZ/onnxruntime/tree/fix/gqa-cudnn-sdpa-build-fallback" target="_blank" rel="noopener">#33424</a> (changes were requested; state as of the last check, upstream is offline); Unsloth <a href="https://github.com/unslothai/unsloth/pull/12857" target="_blank" rel="noopener">#12857</a>.</span></li>
+        </ul>
+        <div class="wtags"><span class="tag">C++</span><span class="tag">CUDA</span><span class="tag">CUDNN</span><span class="tag">GO</span><span class="tag">RUST</span><span class="tag">PYTHON</span></div>
+      </div>
+
+      <div class="work-card card reveal" data-tilt>
+        <div class="wtop">
+          <span class="wtag wip">Work in progress</span>
+          <span class="wtitle">Ascend AI Tutor: RAG for Indian government exams</span>
+        </div>
+        <p class="wdesc">
+          Personal project. Not launched, no users, no live demo. On main today: sentence-aware
+          chunking, embeddings in ChromaDB, hybrid ranking with a keyword fallback, one async client
+          for three LLM API styles with retries, token streaming, a context budget that keeps the
+          system prompt and evidence pinned, and CI.
+        </p>
+        <div class="wsub">Known problems, and how I plan to deal with them</div>
+        <ul class="wr-list">
+          <li><span class="badge">Data</span> <span><b>The corpus is placeholder data:</b> 200 rows, 54 distinct questions, no sources. Replace it with sourced or clearly synthetic items, and fail ingestion on near-duplicates.</span></li>
+          <li><span class="badge">Eval</span> <span><b>Answer and retrieval quality are unmeasured.</b> 50 labelled questions, hit@5 and MRR, vector against keyword against hybrid, run in CI. No quality number is published before a script reproduces it.</span></li>
+          <li><span class="badge">Retrieval</span> <span><b>Keyword overlap is weak.</b> BM25 with rank fusion and a cross-encoder reranker are on a branch. They merge only if they beat the baseline.</span></li>
+          <li><span class="badge">Grounding</span> <span><b>A prompt does not stop hallucination.</b> Cite chunk ids, check that they exist, abstain below a threshold, and test on unanswerable questions.</span></li>
+          <li><span class="badge">Output</span> <span><b>Malformed quiz JSON becomes a fake question.</b> Schema-validated output with bounded retries is on a branch.</span></li>
+          <li><span class="badge">Safety</span> <span><b>Regex injection checks are easy to bypass.</b> Treat retrieved text as untrusted, check outputs, keep a regression set of attacks.</span></li>
+          <li><span class="badge">Uptime</span> <span><b>Provider failure, hung queries, dropped streams.</b> Fallback model, query timeout and stream replay are on a branch, with tests.</span></li>
+        </ul>
+        <div class="wtags"><span class="tag">PYTHON</span><span class="tag">FASTAPI</span><span class="tag">CHROMADB</span><span class="tag">POSTGRESQL</span><span class="tag">REDIS</span><span class="tag">NEXT.JS</span></div>
+        <a class="wlink" href="https://github.com/KafKafrnZ/AI-Tutor#known-problems-and-the-plan-for-each" target="_blank" rel="noopener">All 13 problems, with status →</a>
+      </div>
+
+      <div class="work-card card reveal" data-tilt>
+        <div class="wtop">
+          <span class="wtag own">Personal</span>
+          <span class="wtitle">Brainlox course Q&amp;A</span>
+        </div>
+        <p class="wdesc">
+          Flask app over the public Brainlox technical-courses page. It ranks excerpts
+          with no API key, and calls Groq or Hugging Face only when a key is set.
+          <code>python check_bot.py</code> locks the ranking. An older LangChain build
+          in this repo would not start without a token.
+        </p>
+        <div class="wtags"><span class="tag">FLASK</span><span class="tag">PYTHON</span></div>
+        <a class="wlink" href="https://github.com/KafKafrnZ/Brainlox-chatbot" target="_blank" rel="noopener">View source →</a>
+      </div>
+
+      <div class="work-card card reveal" data-tilt>
+        <div class="wtop">
           <span class="wtag client">Employer</span>
+          <span class="wtag wip">Work in progress</span>
           <span class="wtitle">Shankara Buildpro — internal operations suite</span>
         </div>
         <p class="wdesc">
           Sole developer from August to October 2026, on top of the systems-administrator job.
           Catalog search over Tally item-master exports, fleet income and expenses in place of
           the monthly spreadsheet, and branch stock compared with minimum levels.
-          The repositories are private. The write-up names the stack and the limits, and it
+          It runs on the office server and is still being changed. The repositories are private. The write-up names the stack and the limits, and it
           contains no customer data.
         </p>
         <div class="wmetrics">
-          <div class="wm">One quarter<span>spreadsheet workflow to an office trial</span></div>
-          <div class="wm">One sign-in<span>fleet and inventory moving into the catalog app, on a branch</span></div>
+          <div class="wm">One quarter<span>spreadsheets to an office trial, October 2026</span></div>
+          <div class="wm">One sign-in<span>fleet and inventory merged into the catalog app, 26 October 2026</span></div>
         </div>
         <div class="wtags"><span class="tag">NESTJS</span><span class="tag">REACT</span><span class="tag">POSTGRESQL</span><span class="tag">TYPESCRIPT</span><span class="tag">DOCKER</span></div>
         <a class="wlink" href="shankara.html">Read the write-up →</a>
-      </div>
-
-      <div class="work-card card reveal" data-tilt>
-        <div class="wtop">
-          <span class="wtag production">Merged</span>
-          <span class="wtitle">Unsloth and llama.cpp</span>
-        </div>
-        <p class="wdesc">
-          Five pull requests merged in October 2026. The largest lets Unsloth Studio bind
-          LAN access only to the addresses you choose. Also a spell-check setting, a clear
-          error when a pre-cast text encoder fails, the 4&nbsp;GB QLoRA guide, and a one-line
-          llama.cpp fix so MSVC <code>round</code> agrees on CPU and GPU.
-          An ONNX Runtime cuDNN fallback and two Ollama Windows fixes are still open.
-        </p>
-        <div class="wtags"><span class="tag">PYTHON</span><span class="tag">CUDA</span><span class="tag">WINDOWS</span></div>
-        <a class="wlink" href="https://github.com/unslothai/unsloth/pull/12839" target="_blank" rel="noopener">Unsloth LAN bind →</a>
       </div>
 
       <div class="work-card card reveal" data-tilt>
@@ -579,43 +644,15 @@ footer span{color:var(--cyan)}
         <div class="wtags"><span class="tag">NEXT.JS</span><span class="tag">TAILWIND</span><span class="tag">FRAMER MOTION</span><span class="tag">CRM/ERP</span></div>
       </div>
 
-      <div class="work-card card reveal" data-tilt>
-        <div class="wtop">
-          <span class="wtag own">Personal</span>
-          <span class="wtitle">Brainlox course Q&amp;A</span>
-        </div>
-        <p class="wdesc">
-          Flask app over the public Brainlox technical-courses page. It ranks excerpts
-          with no API key, and calls Groq or Hugging Face only when a key is set.
-          <code>python check_bot.py</code> locks the ranking. An older LangChain build
-          in this repo would not start without a token.
-        </p>
-        <div class="wtags"><span class="tag">FLASK</span><span class="tag">PYTHON</span></div>
-        <a class="wlink" href="https://github.com/KafKafrnZ/Brainlox-chatbot" target="_blank" rel="noopener">View source →</a>
-      </div>
-
-      <div class="work-card card reveal" data-tilt>
-        <div class="wtop">
-          <span class="wtag own">Personal</span>
-          <span class="wtitle">Ascend AI Tutor</span>
-        </div>
-        <p class="wdesc">
-          Personal project for IBPS, SSC, and UPSC prep. Next.js, FastAPI, PostgreSQL,
-          retrieval, and sign-in. Last push was 25 August 2026. It is not a live product
-          with users.
-        </p>
-        <div class="wtags"><span class="tag">FASTAPI</span><span class="tag">NEXT.JS</span><span class="tag">POSTGRESQL</span></div>
-        <a class="wlink" href="https://github.com/KafKafrnZ/AI-Tutor" target="_blank" rel="noopener">View source →</a>
-      </div>
-
     </div>
 
     <div class="building-next card">
       <h4>Currently building</h4>
       <ul>
-        <li>Shankara: merge fleet and inventory onto the catalog app's sign-in. The work is on a branch, not the default branch.</li>
-        <li>ONNX Runtime #33424, cuDNN attention fallback. A maintainer asked for changes. Not merged yet.</li>
-        <li>Ollama #18951 and #18978. Mergeable, blocked until a maintainer approves the first-time CI run.</li>
+        <li>AI tutor: sourced corpus, then a retrieval evaluation. Not started; listed here so the order is public.</li>
+        <li>mistral.rs #2539, FP8 with CUDA graphs. Waiting for a first review.</li>
+        <li>ONNX Runtime #33424, cuDNN attention fallback. Changes were requested; upstream is offline.</li>
+        <li>Five Ollama pull requests, waiting for a maintainer to approve CI.</li>
       </ul>
     </div>
   </div>
@@ -625,23 +662,24 @@ footer span{color:var(--cyan)}
 <section id="roadmap">
   <div class="wrap">
     <div class="eyebrow">Technical Roadmap</div>
-    <h2 class="sec-title">What's live vs. what's next</h2>
-    <p class="sec-sub">Honest split — what I'm applying in production today, and what I'm building toward.</p>
+    <h2 class="sec-title">What exists and what is next</h2>
+    <p class="sec-sub">What I use today, and what I have not done yet.</p>
     <div class="roadmap-grid">
       <div class="rm-col card reveal">
         <h3>Currently applying</h3>
-        <div class="sub">In production or in active use</div>
-        <div class="node"><div><div class="nm">NestJS · React · PostgreSQL · TypeORM</div></div></div>
+        <div class="sub">In use or merged</div>
+        <div class="node"><div><div class="nm">CUDA, cuDNN and Windows bugs in ONNX Runtime, llama.cpp, Unsloth, Ollama, mistral.rs</div></div></div>
+        <div class="node"><div><div class="nm">FastAPI and Flask retrieval apps (in progress, not deployed)</div></div></div>
+        <div class="node"><div><div class="nm">NestJS · React · PostgreSQL · TypeORM, on the office server</div></div></div>
         <div class="node"><div><div class="nm">Docker Compose and an office HTTPS deploy</div></div></div>
-        <div class="node"><div><div class="nm">FastAPI retrieval apps (AI Tutor, Brainlox excerpts)</div></div></div>
-        <div class="node"><div><div class="nm">Windows and CUDA bugs in Unsloth, llama.cpp, Ollama, ONNX Runtime</div></div></div>
       </div>
       <div class="rm-col card reveal">
         <h3>Building toward</h3>
-        <div class="sub">Roadmap, dated honestly</div>
-        <div class="node locked"><div><div class="nm">Get the ONNX Runtime and Ollama pull requests merged</div><div class="dt">IN REVIEW</div></div></div>
-        <div class="node locked"><div><div class="nm">One merged behavioral-eval bugfix, for the public AI story</div><div class="dt">NEXT</div></div></div>
-        <div class="node locked"><div><div class="nm">Sanitized permission from Shankara to show a screen recording</div><div class="dt">WHEN THEY SAY YES</div></div></div>
+        <div class="sub">Not done yet</div>
+        <div class="node locked"><div><div class="nm">AI tutor: sourced corpus and labelled retrieval evaluation</div><div class="dt">NEXT</div></div></div>
+        <div class="node locked"><div><div class="nm">AI tutor: grounded answers that can abstain</div><div class="dt">AFTER THE EVALUATION</div></div></div>
+        <div class="node locked"><div><div class="nm">Get the open pull requests merged</div><div class="dt">WAITING ON REVIEW</div></div></div>
+        <div class="node locked"><div><div class="nm">Permission from Shankara to show a screen recording</div><div class="dt">WHEN THEY SAY YES</div></div></div>
       </div>
     </div>
   </div>
@@ -657,17 +695,17 @@ footer span{color:var(--cyan)}
         <span class="when">2026 — PRESENT</span>
         <h3>Independent AI Engineering <span class="org">· Studio Dante</span></h3>
         <ul>
-          <li>Merged fixes in Unsloth Studio and a one-line llama.cpp CUDA fix. ONNX Runtime and Ollama pull requests are open.</li>
-          <li>Ascend AI Tutor, a personal exam-prep app. Not a launched product.</li>
+          <li>Eight merged pull requests in ONNX Runtime, llama.cpp and Unsloth. Eight more are open, in Ollama, mistral.rs, ONNX Runtime and Unsloth.</li>
+          <li>Ascend AI Tutor, a personal RAG project. Work in progress, not launched.</li>
           <li>Marketing site and operations CRM for a photography studio. No public repository.</li>
         </ul>
       </div>
       <div class="stop card reveal">
         <span class="when">DEC 2025 — PRESENT</span>
-        <h3>IT Manager <span class="org">· Shankara Buildpro, Bengaluru</span></h3>
+        <h3>Systems Administrator <span class="org">· Shankara Buildpro, Bengaluru</span></h3>
         <ul>
-          <li>Sole developer of the internal suite: Tally catalog search, fleet income and expenses, inventory against minimum stock. Office trial in October 2026. <a href="shankara.html">Write-up</a>.</li>
-          <li>The employment title is still systems administrator. Office network and servers are the other half of the job.</li>
+          <li>Sole developer of the internal suite: Tally catalog search, fleet income and expenses, inventory against minimum stock. Office trial in October 2026, one sign-in since 26 October, still being changed. <a href="shankara.html">Write-up</a>.</li>
+          <li>Office network and servers are the other half of the job.</li>
         </ul>
       </div>
       <div class="stop card reveal">
@@ -692,11 +730,12 @@ footer span{color:var(--cyan)}
 <section id="writing">
   <div class="wrap">
     <div class="eyebrow">Writing</div>
-    <h2 class="sec-title">Two things you can open</h2>
+    <h2 class="sec-title">Three things you can open</h2>
     <div class="writing-card card reveal">
       <ul class="wr-list">
         <li><span class="badge">LIVE</span> <span><b><a href="shankara.html">What the Shankara suite is</a></b>, and what it is not. No customer data.</span></li>
-        <li><span class="badge">MERGED</span> <span><b><a href="https://github.com/unslothai/unsloth/pull/7605">4 GB QLoRA guide</a></b> in the Unsloth docs. Merged 5 October 2026. An older résumé still called this pull request open.</span></li>
+        <li><span class="badge">MERGED</span> <span><b><a href="https://github.com/unslothai/unsloth/pull/7605">4 GB QLoRA guide</a></b> in the Unsloth docs. Merged 5 October 2026.</span></li>
+        <li><span class="badge">IN PROGRESS</span> <span><b><a href="https://github.com/KafKafrnZ/AI-Tutor#readme">The AI tutor's README</a></b>: what works, 13 known problems, and the plan for each.</span></li>
       </ul>
     </div>
   </div>
@@ -721,7 +760,7 @@ footer span{color:var(--cyan)}
 
 </main>
 
-<footer>STUDIO DANTE · BUILT BY HAND, MEASURED BY CI · <span>MEMENTO MORI — THEN SHIP</span></footer>
+<footer>STUDIO DANTE · <span>MEMENTO MORI — THEN SHIP</span></footer>
 
 <script>
 /* ── stars ── */
@@ -848,7 +887,7 @@ window.addEventListener('scroll', onScroll, { passive: true });
 window.addEventListener('resize', onScroll);
 onScroll();
 
-/* ── reveal on scroll + meter fill + count-up ── */
+/* ── reveal on scroll + count-up ── */
 function countUp(el) {
   const target = parseFloat(el.dataset.count);
   const suffix = el.dataset.suffix || '';
@@ -868,7 +907,6 @@ const io = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
     if (e.isIntersecting) {
       e.target.classList.add('in');
-      e.target.querySelectorAll('.meter i').forEach(b => { b.style.width = b.dataset.w + '%'; });
       e.target.querySelectorAll('[data-count]').forEach(el => reducedMotion ? (el.textContent = el.dataset.count + (el.dataset.suffix||'')) : countUp(el));
       io.unobserve(e.target);
     }

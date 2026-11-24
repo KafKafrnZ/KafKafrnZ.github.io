@@ -29,8 +29,10 @@
   <h1>Internal operations suite, Shankara Buildpro</h1>
   <p class="muted">Bengaluru · August–October 2026 · sole developer. The company title on the offer letter is systems administrator. Repositories are private. This page has no customer data, no internal hostnames, and no screenshots of live sheets.</p>
 
+  <p><strong>Status: work in progress.</strong> Fleet and inventory were merged into the catalog app on 26 October 2026, and the office server runs that build. It is still being tested and changed.</p>
+
   <h2>The job the spreadsheets were doing</h2>
-  <p>Shankara Buildpro sells building materials. Two office jobs were still workbooks.</p>
+  <p>Shankara Buildpro sells building materials. Three office jobs were still workbooks.</p>
   <ul>
     <li>The item catalog. Stewards export the item master from Tally. Everyone else needs to search and filter it. Tally stays the accounting system. This app does not post vouchers.</li>
     <li>The fleet sheet. Vehicle-wise income and expenses for the month: vehicles, drivers, trips, fuel, repairs, and bills.</li>
@@ -42,7 +44,7 @@
     <li>A NestJS API and a React UI on PostgreSQL, with TypeORM migrations and Docker Compose for the database.</li>
     <li>Sign-in and roles. Catalog upload, search, filter, and edits that stay on the sheet they came from. Full exports are streamed, because the item master is large.</li>
     <li>FleetHub. Masters, trip and expense entry, Excel export, and reports you can print. People at the office tried it in October.</li>
-    <li>A branch that puts the fleet screens and the inventory screens inside the catalog app: one sign-in, one database. That branch is ahead of the default branch. Cutover is the current work.</li>
+    <li>The fleet screens and the inventory screens inside the catalog app: one sign-in, one database. Merged to the default branch on 26 October 2026.</li>
   </ul>
   <p>Stack: TypeScript, NestJS, React, PostgreSQL, Docker. I wrote the schema, the API, the UI, the office deploy, and the changes that came back after people used it.</p>
 
@@ -50,7 +52,7 @@
   <ul>
     <li>Not a public product. Another company would get a new build. This data stays at Shankara.</li>
     <li>Not an accounting system.</li>
-    <li>Not finished as one app. Fleet still has its own repository. The merged suite is on a branch.</li>
+    <li>Not finished. The merged suite is in office use while it is still being changed.</li>
     <li>The public <a href="https://github.com/KafKafrnZ/shankara-analytics">shankara-analytics</a> repo is a one-commit visual dashboard. Staff do not use it. It is not part of this suite.</li>
   </ul>
 </main>
